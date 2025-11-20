@@ -1,0 +1,23 @@
+Comunda Basic Definitions
+
+ Camunda -> a framework that is responsible for the execution of BPMN files.
+
+ Camunda Modeler -> a tool that helps us in creating BPMNs and DMNs.
+
+ - BPMN stands for Business Process Model Notation. It's an open standard to diagram a 
+   a business process. 	
+
+* Task -> Each rectangle box is a task. A single unit of actual work being performed.
+* Process -> a process is a group of task that define the flow of execution.
+* Circle -> represents a starting point of the process.
+* The outlined circle is the ending point of the process.
+
+* Process Engine -> a java library that understands BPMNs and DMNs, and it's responsible
+					for executing them.
+
+
+ The Process Engine Architecture:
+  - Public API: Alows java application to interact with Process Engine.
+  - BPMN Core Engine: Parses BPMN files.
+  - Job Executor: process asynchronous background work
+  - Persistence Layer: Persist process instance state into a relational database.	
